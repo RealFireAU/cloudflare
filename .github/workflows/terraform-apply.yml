@@ -10,6 +10,7 @@ env:
   TF_HTTP_USERNAME: ${{ vars.TF_HTTP_USERNAME }}
   TF_HTTP_PASSWORD: ${{ secrets.TF_HTTP_PASSWORD }}
   CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  TF_VAR_cloudflare_email_catch_all_address: ${{ secrets.TF_VAR_cloudflare_email_catch_all_address }}
 
 jobs:
   terraform:
