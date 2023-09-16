@@ -16,7 +16,8 @@ provider "cloudflare" {}
 
 ## Define zones as modules
 module "protectedpii_com" {
-  source = "./zones/protectedpii_com"
+  source                             = "./zones/protectedpii_com"
+  cloudflare_email_catch_all_address = [cloudflare_email_routing_address.primary.email]
 }
 
 module "realfire_au" {
