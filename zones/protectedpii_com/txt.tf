@@ -12,6 +12,6 @@ resource "cloudflare_record" "spf" {
   proxied = false
   ttl     = 1
   type    = "TXT"
-  value   = "v=spf1 include:_spf.mx.cloudflare.net ~all"
+  value   = "v=spf1 include:spf.messagingengine.com ?all"
   zone_id = "25d563c95e0021b9a4f2475d2d470a9e"
 }
