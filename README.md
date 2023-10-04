@@ -6,9 +6,6 @@ Cloudflare configurations, deployed as code!
 I don't yet manage all kinds of Cloudflare resources with Terraform only these:
 
 - DNS Records
-- Email routing rules
-- Email routing settings
-- Email forwarding addresses
 
 All other resources are managed from the Cloudflare UI.
 
