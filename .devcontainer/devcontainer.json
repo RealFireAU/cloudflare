@@ -3,5 +3,12 @@
   "features": {
     "ghcr.io/devcontainers-contrib/features/tfswitch:1": {}
   },
-  "postAttachCommand": "/usr/local/bin/tfswitch --latest && export PATH=$PATH:/home/codespace/bin"
+  "customizations": {
+    "vscode": {
+      "extensions": ["hashicorp.terraform"]
+    }
+  },
+  "postCreateCommand": "bash -i -c '/usr/local/bin/tfswitch --latest'",
+  "remoteEnv": { "PATH": "${containerEnv:PATH}:/home/codespace/bin" },
+  "postStartCommand": "bash -i -c '/home/codespace/bin/terraform init'"
 }
