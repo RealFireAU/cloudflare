@@ -2,5 +2,6 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers-contrib/features/tfswitch:1": {}
-  }
+  },
+  "postAttachCommand": "/usr/local/bin/tfswitch --latest && export PATH=$PATH:/home/codespace/bin"
 }
