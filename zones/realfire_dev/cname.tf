@@ -26,7 +26,7 @@ resource "cloudflare_record" "fastmail-dkim3" {
 }
 
 resource "cloudflare_record" "homepage" {
-  name    = "realfire.dev"
+  name    = "@"
   proxied = true
   ttl     = 1
   type    = "CNAME"
