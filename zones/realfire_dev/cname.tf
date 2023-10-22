@@ -24,3 +24,12 @@ resource "cloudflare_record" "fastmail-dkim3" {
   value   = "fm3.realfire.dev.dkim.fmhosted.com"
   zone_id = "3b6f54c1b3b5db42cc518819a7b65bed"
 }
+
+resource "cloudflare_record" "homepage" {
+  name    = "realfire.dev"
+  proxied = true
+  ttl     = 1
+  type    = "CNAME"
+  value   = "realfire.pages.dev"
+  zone_id = "3b6f54c1b3b5db42cc518819a7b65bed"
+}
