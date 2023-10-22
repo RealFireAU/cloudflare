@@ -15,3 +15,12 @@ resource "cloudflare_record" "spf" {
   value   = "v=spf1 include:spf.messagingengine.com ?all"
   zone_id = "3b6f54c1b3b5db42cc518819a7b65bed"
 }
+
+resource "cloudflare_record" "discord-dv" {
+  name    = "_discord.realfire.dev"
+  proxied = false
+  ttl     = 1
+  type    = "TXT"
+  value   = "dh=fae2b519ddecdfd9a629cbaec39df158316759e7"
+  zone_id = "3b6f54c1b3b5db42cc518819a7b65bed"
+}
