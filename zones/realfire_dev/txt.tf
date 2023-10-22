@@ -21,6 +21,6 @@ resource "cloudflare_record" "discord-dv" {
   proxied = false
   ttl     = 1
   type    = "TXT"
-  value   = "dh=fae2b519ddecdfd9a629cbaec39df158316759e7"
+  value   = "dh=15bc75d8985a6338740008fc48cb0defbffac6cc"
   zone_id = "3b6f54c1b3b5db42cc518819a7b65bed"
 }
