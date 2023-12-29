@@ -34,3 +34,11 @@ resource "cloudflare_record" "terraform_managed_resource_1b00ada15f8487843dc8e90
   zone_id = "1f019c7820ff055bf1009958be12488a"
 }
 
+resource "cloudflare_record" "minceaft-server" {
+  name    = "mc"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  value   = "148.113.5.230"
+  zone_id = "1f019c7820ff055bf1009958be12488a"
+}
