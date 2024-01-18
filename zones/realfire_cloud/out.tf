@@ -38,7 +38,7 @@ resource "cloudflare_record" "minceaft-server" {
   name    = "mc"
   proxied = false
   ttl     = 1
-  type    = "A"
-  value   = "148.113.5.230"
+  type    = "CNAME"
+  value   = "horse-tx.gl.joinmc.link"
   zone_id = "1f019c7820ff055bf1009958be12488a"
 }
