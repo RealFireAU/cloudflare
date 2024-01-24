@@ -34,11 +34,29 @@ resource "cloudflare_record" "terraform_managed_resource_1b00ada15f8487843dc8e90
   zone_id = "1f019c7820ff055bf1009958be12488a"
 }
 
-resource "cloudflare_record" "minceaft-server" {
+resource "cloudflare_record" "wireguard-server" {
+  name    = "wg"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  value   = "3.67.92.121"
+  zone_id = "1f019c7820ff055bf1009958be12488a"
+}
+
+resource "cloudflare_record" "minecraft-server" {
   name    = "mc"
   proxied = false
   ttl     = 1
-  type    = "CNAME"
-  value   = "horse-tx.gl.joinmc.link"
+  type    = "A"
+  value   = "3.67.92.121"
+  zone_id = "1f019c7820ff055bf1009958be12488a"
+}
+
+resource "cloudflare_record" "proxy-server" {
+  name    = "proxy"
+  proxied = false
+  ttl     = 1
+  type    = "A"
+  value   = "3.67.92.121"
   zone_id = "1f019c7820ff055bf1009958be12488a"
 }
