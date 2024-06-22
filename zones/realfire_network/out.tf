@@ -4,7 +4,7 @@ resource "cloudflare_record" "mc2-a" {
   proxied = false
   name    = "goobers"
   type    = "A"
-  value   = "13.211.139.119"
+  value   = "103.1.215.21"
   zone_id = "fc42edd047c0e37cb551da3fac654265"
 }
 
